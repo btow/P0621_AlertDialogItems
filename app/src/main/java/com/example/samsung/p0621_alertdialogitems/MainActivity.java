@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ListAdapter;
+import android.widget.Toast;
 
 import static android.view.View.*;
 
@@ -91,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         return adb.create();
     }
 
+// For Android below 3.2
     protected void onPrepareDialog(int id, Dialog dialog) {
         //Доступ к адаптеру списка диалога
         AlertDialog aDialog = (AlertDialog) dialog;
@@ -124,7 +126,9 @@ public class MainActivity extends AppCompatActivity {
 
         public void onClick(DialogInterface dialog, int which) {
             //Вывод в лог позиции нажатого элемента
-            Log.d(LOG_TAG, "which = " + which);
+            String message = "Rowse number = " + which;
+            Toast.makeText(getBaseContext(), message, Toast.LENGTH_SHORT).show();
+            Log.d(LOG_TAG, message);
         }
     };
 }
