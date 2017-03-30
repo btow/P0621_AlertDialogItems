@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.samsung.p0621_alertdialogitems.MainActivity">
+
+    <Button
+        android:id="@+id/btnItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButton"
+        android:text="@string/items"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnAdapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButton"
+        android:text="@string/adapter"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnCursor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButton"
+        android:text="@string/cursor"
+        android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">P0621_AlertDialogItems</string>
+    <string name="items">Items</string>
+    <string name="adapter">Adapter</string>
+    <string name="cursor">Cursor</string>
+    <integer name="number_items">10</integer>
+    <string-array name="data">
+        <item name="one">One</item>
+        <item name="two">Two</item>
+        <item name="three">Three</item>
+        <item name="four">Four</item>
+    </string-array>
+</resources>
